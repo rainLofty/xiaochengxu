@@ -1,0 +1,92 @@
+@import "../../font/iconfont.wxss";
+page{
+  background: #f8f8f8;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+/*头像  */
+.updateList{
+  background: #fff;
+  padding:20rpx 20rpx 38rpx;
+  overflow: hidden;
+  margin-bottom:20rpx;
+}
+.updateList .userTitle{
+  overflow: hidden;
+  height:100rpx;
+}
+.updateList .portrait{
+  width:100rpx;
+  height:100rpx;
+  margin-right:20rpx;
+}
+.userTitle text{
+  display: block;
+  font-size:32rpx;
+  line-height:50rpx;
+}
+.userTitle .publicTime{
+  color:#999;
+  font-size:24rpx;
+}
+.userTitle .iconfont{
+  line-height:100rpx;
+  font-size:32rpx;
+  color:#888;
+}
+/*内容  */
+.updateList .content{
+  font-size:26rpx;
+  color:#333;
+  line-height:46rpx;
+  padding:28rpx 0;
+}
+/*图片展示  */
+.imgShowList image{
+  width:33.33%;
+  height:222rpx;
+  padding:0 6rpx;
+  box-sizing: border-box;
+}
+/*点赞评论  */
+.comment {
+  overflow: hidden;
+  margin-top:22rpx;
+  height:50rpx;
+}
+.comment .inlineICon{
+  float:left;
+  width:24%;
+  height:50rpx;
+  overflow: hidden;
+}
+.comment .iconfont::before{
+  float:left;
+  color:#666;
+  font-size:38rpx;
+  margin-top:6rpx;
+  line-height:1em; 
+  font-weight:700;
+}
+
+.comment .icon-pinglun::before{
+   font-size:32rpx; 
+} 
+.comment view text{
+  color:#999;
+  font-size:26rpx;
+  padding:0 8rpx;
+  float:left;
+  height:50rpx;
+  line-height:52rpx;
+}
+.comment .beClicked text{
+  color:#DE521E;
+}
+.comment .beClicked::before{
+  color:#D03800;
+}

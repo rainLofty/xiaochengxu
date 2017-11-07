@@ -1,0 +1,144 @@
+@import "../../font/iconfont.wxss";
+@import "../../css/listicon.wxss";
+
+.member{
+  overflow:hidden;
+}
+.member .portrait{
+  width:20%;
+  float: left;
+}
+.member .portrait image{
+  width:82%;
+  height:116rpx;
+  border:1px solid #eee;
+  border-radius: 12rpx;
+  float:left;
+  margin-right:20rpx;
+}
+.member .userRight{
+  float:left;
+  width:72%;
+}
+.member .icon-gengduo{
+  line-height:120rpx;
+  font-size:38rpx;
+  width:8%;
+}
+.member text{
+  display: block;
+  font-size:24rpx;
+  color:#999;
+  line-height:40rpx;
+}
+.member .username{
+  font-size:34rpx;
+  color:#000;
+  line-height:1em;
+  padding:20rpx 0 22rpx;
+  font-weight:400;  
+}
+.member .userintro{
+  width:100%;
+  font-size:28rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* 多行：display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  /*简介：最多13个字  */
+}
+.mineList{
+  font-size:34rpx;
+  overflow: hidden;
+}
+.mineList .consumeState{
+  text-align:center;
+  float:left;
+  width:33.33%;
+  padding:18rpx 0 14rpx;
+  background:#fff;
+  line-height:40rpx;
+}
+.mineList .consumeState view{
+  color:#777;
+  font-size:24rpx;
+}
+.mineList .consumeState .iconleft{
+  color:#119291;
+  line-height:48rpx;
+  font-size:38rpx;
+  position: relative;
+}
+.consumeState .brand{
+  width:30rpx;
+  height:30rpx;
+  color:#fff;
+  text-align: center;
+  line-height:30rpx;
+  font-size:20rpx;
+  background: #EC002C;
+  border-radius: 50%;
+  left:75%;
+  top:-8rpx;
+  position: absolute;
+  overflow: hidden;
+}
+/*我的相册 我的消息  */
+.mineHandle{
+  background: #fff;
+  margin-top:30rpx;
+ 
+}
+.mineHandle .left{
+  float: left;
+}
+.mineHandle .right{
+  float: right;
+}
+.mineHandle .list{
+  position: relative;
+  overflow: hidden;
+  height:100rpx;
+  line-height:60rpx;
+  border-bottom:1px solid #eee;
+  padding:20rpx 10rpx 20rpx 20rpx;
+}
+.mineHandle .iconfont{
+  color:#555;
+  font-size:26rpx;
+  
+}
+.mineHandle .iconfont::before{
+  font-size:38rpx;
+  display: inline-block;
+  margin-right: 14rpx;
+}
+.mineHandle .icon-gengduo::before{
+  font-size:28rpx;
+}
+.announce .iconfont::before{
+  color:#B0C362;
+}
+.message .iconfont::before{
+  color: #C68EF9;
+}
+.collect .iconfont::before{
+  color: #7AAEFD;
+}
+/*小红点  提示有新的消息  */
+.mineHandle .redbrand{
+  position: absolute;
+  top:50%;
+  right:48rpx;
+  margin-top:-16rpx;
+  width:32rpx;
+  height:32rpx;
+  color:#fff;
+  text-align: center;
+  line-height:32rpx;
+  font-size:20rpx;
+  background: #EC002C;
+  border-radius: 50%; 
+}

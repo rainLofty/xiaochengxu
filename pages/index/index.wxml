@@ -1,0 +1,22 @@
+<swiper indicator-dots="true"  autoplay="true"indicator-active-color="rgba(255,255,255,0.7)" class="banner">
+  <block wx:for="{{imgBanner}}" wx:key="{{item}}">
+    <swiper-item>
+      <image src="{{item}}"  mode="aspectFill"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="clothesCon">
+  <view class="conTitle">{{conTitle[0]}}</view>
+  <view class="con">
+    <view wx:for="{{clothesCards}}" wx:key="{{item.imgUrl}}" class="conCards">
+       <navigator url="../imgList/imgList?id={{index}}&&kind={{item.title}}&&kindName={{item.kindName}}" open-type="navigate" hover-class="none">
+        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+       </navigator>
+      <text>{{item.title}}</text>
+      <text>{{item.titleEng}}</text>      
+    </view>
+  </view>
+</view>
+<view class="hint">
+  <text>别扯了，已经到底了</text>
+</view>

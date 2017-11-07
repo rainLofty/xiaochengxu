@@ -1,0 +1,15 @@
+<!--服装图片列表  -->
+
+<view class="imageshow">
+ <view class="article">
+  <text class="title">{{poetry[id].title}}</text>
+  <text class="kind">服装类别：{{kind}}</text>
+  <text class="poetry">{{poetry[id].con}}</text>  
+ </view>
+ <view wx:for="{{imgUrl}}"  wx:key="{{item}}">
+   <image src="{{imgUrl[index]}}" data-src="{{imgUrl[index]}}" data-list="{{imgUrl}}" mode="aspectFill" lazy-load="true" bindtap='previewImage'></image>
+ </view>
+</view>
+<view class="hint">
+  <text>别扯了，已经到底了</text>
+</view>

@@ -1,0 +1,23 @@
+page{
+  background: #f8f8f8;
+  overflow:hidden;
+}
+.list{
+  width:100%;
+  box-sizing:border-box;
+  border-bottom:1px solid #eee;
+  background: #fff;
+  overflow:hidden;
+  padding:20rpx 20rpx;
+  font-size:28rpx;
+  line-height:60rpx;
+  color:#444;
+}
+.list .icon-gengduo{
+  float:right;
+  text-align: right;
+  font-size:34rpx;
+}
+.list .icon-gengduo::before{
+ color:#ccc !important;
+}

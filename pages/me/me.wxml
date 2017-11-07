@@ -1,0 +1,38 @@
+<!--个人信息  -->
+<navigator url="{{infoUrl}}" hover-class="none">
+  <view class="list member">
+    <view class="portrait">
+      <image src="{{user.portrait}}" data-src="{{user.portrait}}" ></image>
+    </view>
+    <view class="userRight">
+        <text class="username">{{user.name}}</text>
+        <text class="userintro">{{user.intro}}</text>      
+    </view> 
+     <text class="iconfont icon-gengduo"></text> 
+  </view>
+</navigator>
+<!--订单状态  -->
+<view class="mineList">
+  <view wx:for="{{orderStatus}}" wx:key="{{item.name}}" >
+    <navigator url="" hover-class='none'>
+      <view class="consumeState">
+        <text class="iconleft iconfont icon-{{item.icon}}">
+          <text wx:if="{{item.brandShow}}" class="brand">{{item.brandCont}}</text>
+        </text>
+        <view>{{item.name}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--我的相册  我的消息  我的收藏   -->
+<view class="mineHandle">
+  <view wx:for="{{mineHandleLists}}" wx:key="{{item}}">
+    <navigator url="}" hover-class='none'>
+      <view class="list {{item.classStr}}">
+        <text class="left iconfont icon-{{item.icon}}">{{item.text}}</text>
+        <text class="right iconfont icon-gengduo"></text>
+        <view wx:if="{{item.brandShow}}" class="redbrand">{{item.brand_con}}</view>
+      </view>
+    </navigator>
+   </view>
+</view>

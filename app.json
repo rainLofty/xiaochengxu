@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/imgList/imgList",
+        "pages/friends/friends",
+        "pages/onbook/onbook",
+        "pages/me/me"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#119291",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance":"120rpx"
+    },
+    "tabBar": {
+      "color": "#8a8a8a",
+      "selectedColor": "#119291",
+      "borderStyle": "black",
+      "backgroundColor":"#F9F9F9",
+      "list": [
+        {
+          "selectedIconPath": "images/clotheshover.png",
+          "iconPath": "images/clothes.png",
+          "pagePath": "pages/index/index",
+          "text": "服装"
+        },
+        {
+          "selectedIconPath": "images/friendshover.png",
+          "iconPath": "images/friends.png",
+          "pagePath": "pages/friends/friends",
+          "text": "客照"
+        },
+        {
+          "selectedIconPath": "images/onbookhover.png",
+          "iconPath": "images/onbook.png",
+          "pagePath": "pages/onbook/onbook",
+          "text": "预约"
+        },
+        {
+          "selectedIconPath": "images/personhover.png",
+          "iconPath": "images/person.png",
+          "pagePath": "pages/me/me",
+          "text": "我的"
+        }
+      ]
+    }
+}
